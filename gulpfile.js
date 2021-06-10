@@ -21,7 +21,9 @@ function clean() {
 }
 
 function html() {
-  return src("*.html").pipe(replace("/dist", "")).pipe(dest("dist"))
+  return src("*.html")
+    .pipe(replace("/dist", "/voyager7site"))
+    .pipe(dest("dist"))
 }
 
 function scss() {
