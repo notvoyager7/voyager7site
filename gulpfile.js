@@ -5,6 +5,7 @@ const cssnano = require("cssnano")
 const terser = require("gulp-terser")
 const browsersync = require("browser-sync").create()
 const del = require("del")
+const replace = require("gulp-string-replace")
 
 function serve(cb) {
   browsersync.init({
@@ -20,7 +21,7 @@ function clean() {
 }
 
 function html() {
-  return src("*.html").pipe(dest("dist"))
+  return src("*.html").pipe(replace("/dist", "")).pipe(dest("dist"))
 }
 
 function scss() {
