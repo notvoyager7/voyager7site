@@ -4,6 +4,7 @@ const postcss = require("gulp-postcss")
 const cssnano = require("cssnano")
 const terser = require("gulp-terser")
 const browsersync = require("browser-sync").create()
+const del = require("del")
 
 function serve(cb) {
   browsersync.init({
@@ -12,6 +13,10 @@ function serve(cb) {
     },
   })
   cb()
+}
+
+function clean() {
+  return del("dist")
 }
 
 function html() {
@@ -31,6 +36,10 @@ function js() {
     .pipe(dest("dist", { sourcemaps: "." }))
 }
 
+function img() {
+  return src("src/img/*").pipe(dest("dist"))
+}
+
 function reload(cb) {
   browsersync.reload()
   cb()
@@ -39,6 +48,7 @@ function reload(cb) {
 function watchForChanges() {
   watch("*.html", series(html, reload))
   watch(["src/scss/*.scss", "src/js/*.js"], series(scss, js, reload))
+  watch("src/img/*", series(img, reload))
 }
 
-exports.default = series(html, scss, js, serve, watchForChanges)
+exports.default = series(clean, html, scss, js, img, serve, watchForChanges)
