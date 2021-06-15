@@ -1,0 +1,32 @@
+.computer {
+  width: 30vw;
+  max-width: 575px;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 20px rgb(165, 252, 246));
+  }
+}
+
+.computerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-flow: column nowrap;
+  margin-top: -13.5rem;
+}
+
+.comments p {
+  color: white;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.v7domain {
+  color: white;
+  // margin-left: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}

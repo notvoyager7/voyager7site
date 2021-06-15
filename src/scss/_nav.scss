@@ -1,0 +1,56 @@
+nav {
+  position: fixed;
+  top: 0px;
+  background-color: rgb(34, 34, 34);
+  width: 100%;
+
+  .nav-btn {
+    a {
+      color: white;
+      text-decoration: none;
+      padding: 0.4rem 2.2rem;
+      border: 1px solid black;
+      text-transform: lowercase;
+      font-size: 2.3rem;
+      background-color: rgb(25, 25, 25);
+      margin-left: 1rem;
+
+      &:hover {
+        color: black;
+        background-color: rgb(184, 194, 248);
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo a {
+    height: 6rem;
+    width: 6rem;
+    //had this at 16,16,16 for a while, idk what I want
+    //maybe 25,25,25???
+    background-color: rgb(16, 16, 16);
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.5rem;
+    transition: transform 2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 3px #b8c2f8;
+      transform: rotate(360deg);
+    }
+
+    img {
+      height: 3.4rem;
+    }
+  }
+}
