@@ -1,6 +1,6 @@
 body {
-  // background-color: rgb(34, 34, 34);
-  background-color: blue;
+  background-color: rgb(34, 34, 34);
+  // background-color: blue;
   font-family: "Odibee Sans", cursive;
 }
 
@@ -17,15 +17,15 @@ body {
 }
 
 .grid {
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     display: flex;
+  }
 
-    .cell {
-      flex-grow: 1;
-    }
+  .cell {
+    flex-grow: 1;
+  }
 
-    .cell-large {
-      flex-grow: 2;
-    }
+  .cell-large {
+    flex-grow: 2;
   }
 }

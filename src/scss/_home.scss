@@ -1,7 +1,6 @@
 .computer {
   width: 30vw;
   max-width: 575px;
-
   &:hover {
     filter: drop-shadow(0px 0px 20px rgb(165, 252, 246));
   }
@@ -14,14 +13,16 @@
   height: 100%;
   width: 100%;
   flex-flow: column nowrap;
-  margin-top: -13.5rem;
 }
 
-.comments p {
+.comments p code {
   color: white;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.comments {
+  padding: 1rem;
 }
 
 .v7domain {
@@ -29,4 +30,5 @@
   // margin-left: 2rem;
   font-size: 5rem;
   text-align: center;
+  margin: 0;
 }
