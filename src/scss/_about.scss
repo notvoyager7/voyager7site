@@ -7,6 +7,19 @@
     margin: 20.8px;
     border: 4px solid rgb(30, 30, 30);
   }
+  .pfp-div {
+    display: flex;
+    @media (max-width: 1023px) {
+      justify-content: center;
+    }
+    @media (max-width: 366px) {
+      .pfp {
+        width: 85vw;
+        height: 85vw;
+      }
+    }
+  }
+
   .skateboard {
     .skateboardimg {
       max-height: 640px;
