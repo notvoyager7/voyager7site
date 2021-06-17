@@ -26,18 +26,32 @@
     // justify-content: center;
     // align-items: center;
   }
-  .aboutscrollbox {
-    overflow: scroll;
-    height: 65vh;
+  .aboutbox {
+    //overflow: scroll;
+    //min-height: 65vh;
     margin-top: 20.8px;
+    margin-bottom: 20.8px;
     color: white;
     font-size: 1.5rem;
     line-height: 4rem;
     border: 1px solid white;
     padding: 16px;
     background-color: rgb(50, 50, 50);
+
     @media (max-width: 1023px) {
       margin: 20.8px;
+      line-height: 3rem;
+    }
+    @media (max-width: 1500px) {
+      line-height: 2.5rem;
+    }
+    @media (max-width: 1210px) {
+      font-size: 1.2rem;
+      line-height: 2.3rem;
+    }
+    @media (max-width: 1124px) {
+      font-size: 1rem;
+      line-height: 2.2rem;
     }
   }
 }
