@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"index.js"}
+{"version":3,"sources":["index.js"],"names":["toggleMenu","x","document","getElementById","style","display"],"mappings":"AAAA,SAASA,aACP,IAAIC,EAAIC,SAASC,eAAe,cACR,UAApBF,EAAEG,MAAMC,QACVJ,EAAEG,MAAMC,QAAU,OAElBJ,EAAEG,MAAMC,QAAU","file":"index.js"}

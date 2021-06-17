@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Voyager7 - Coding</title>
+    <title>Voyager7 - Home</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
@@ -17,6 +21,12 @@
   <body>
     <div class="container">
       <nav>
+        <div class="hamburger-div">
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="hamburger-icon fa fa-bars"></i>
+          </a>
+        </div>
+
         <ul>
           <li class="logo">
             <a href="index.html">
@@ -33,30 +43,21 @@
             <a href="content.html">Content</a>
           </li>
         </ul>
+
+        <div id="dropdownID" class="dropdown-content">
+          <a href="about.html">about me</a>
+          <a href="coding.html">coding</a>
+          <a href="content.html">content</a>
+        </div>
       </nav>
 
       <div class="pagewrapper">
-        <h1>HEADER</h1>
-        <div class="grid">
-
-          <div class="cell">
-            <h1>Cell-1</h1>
-          </div>
-
-          <div class="cell-large">
-            <h1>Cell-2</h1>
-          </div>
-
-          <div class="cell">
-            <h1>Cell-3</h1>
-          </div>
-        </div>
-
-        <footer>
-          <!-- <i class="fab fa-instagram fa-4x"></i> -->
-        </footer>
+        
       </div>
 
+      <footer>
+        <!-- <i class="fab fa-instagram fa-4x"></i> -->
+      </footer>
     <script src="/index.js"></script>
   </body>
 </html>
