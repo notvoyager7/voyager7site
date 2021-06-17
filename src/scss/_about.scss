@@ -2,15 +2,15 @@
   min-height: calc(100vh-128px);
   width: 100%;
   .pfp {
-    width: 20rem;
-    height: 20rem;
-    margin: 1.3rem;
+    width: 320px;
+    height: 320px;
+    margin: 20.8px;
     border: 4px solid rgb(30, 30, 30);
   }
   .skateboard {
     .skateboardimg {
-      max-height: 40rem;
-      max-width: 10rem;
+      max-height: 640px;
+      max-width: 160px;
     }
     @media (max-width: 1023px) {
       .skateboardimg {
@@ -22,22 +22,22 @@
       max-height: 25vh;
     }
     display: flex;
-    margin: 1.3rem;
+    margin: 20.8px;
     // justify-content: center;
     // align-items: center;
   }
   .aboutscrollbox {
     overflow: scroll;
     height: 65vh;
-    margin-top: 1.3rem;
+    margin-top: 20.8px;
     color: white;
     font-size: 1.5rem;
     line-height: 4rem;
     border: 1px solid white;
-    padding: 1rem;
+    padding: 16px;
     background-color: rgb(50, 50, 50);
     @media (max-width: 1023px) {
-      margin: 1.3rem;
+      margin: 20.8px;
     }
   }
 }
