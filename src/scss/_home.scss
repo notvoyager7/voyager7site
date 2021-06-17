@@ -1,8 +1,16 @@
 .computer {
   min-width: 30vw;
-  max-width: 300px;
+  max-width: 280px;
   &:hover {
     filter: drop-shadow(0px 0px 20px rgb(165, 252, 246));
+  }
+
+  @media (max-width: 366px) {
+    max-width: 250px;
+  }
+
+  @media (min-height: 790px) and (min-width: 605px) {
+    max-width: 50vh;
   }
 }
 
@@ -22,6 +30,9 @@
   @media (max-width: 1023px) {
     font-size: 1rem;
   }
+  @media (min-height: 790px) {
+    font-size: 1.5rem;
+  }
 }
 
 .comments {
@@ -37,5 +48,11 @@
   margin: 0;
   @media (max-width: 1023px) {
     font-size: 4.5rem;
+  }
+  @media (max-width: 366px) {
+    font-size: 4.2rem;
+  }
+  @media (min-height: 790px) and (min-width: 605px) {
+    font-size: 7rem;
   }
 }
