@@ -43,13 +43,11 @@ a {
 }
 
 .card:focus-within ~ .card,
-.card:hover ~ .card,
-.card:active ~ .card {
+.card:hover ~ .card {
   transform: translateX(130px);
 }
 
-.card:hover,
-.card:active {
+.card:hover {
   transform: translateY(-1rem);
 }
 
