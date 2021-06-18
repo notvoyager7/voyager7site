@@ -1,0 +1,58 @@
+.cell-large-coding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell-coding {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.coding-page-title {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.coding-title-wrapper {
+  padding: 16px;
+}
+
+.github-text-link {
+  display: flex;
+  width: 330px;
+  margin: 16px;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: $hover-blue;
+    }
+  }
+}
+
+.github-image-wrapper {
+  text-decoration: none;
+  color: rgb(50, 50, 50);
+  background-color: rgb(15, 15, 15);
+  padding: 10px;
+  border: 4px solid rgb(30, 30, 30);
+}
+
+.github-image-wrapper a {
+  color: rgb(70, 70, 70);
+}
+
+.github-image-wrapper a .fa-github {
+  font-size: 292px;
+  &:hover {
+    color: $hover-blue;
+  }
+}
