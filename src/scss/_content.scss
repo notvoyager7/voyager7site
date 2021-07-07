@@ -1,0 +1,79 @@
+.content-grid {
+  flex-direction: column;
+}
+
+.fa-youtube {
+  color: red;
+  font-size: 100px;
+}
+
+.youtubewrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 10px;
+  h1 {
+    font-size: 3rem;
+    color: white;
+  }
+}
+
+.white-logo {
+  width: 230px;
+  margin: 10px;
+}
+
+.v7-content-header {
+  margin-left: 10px;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.logoimgbox {
+  border: 4px solid rgb(30, 30, 30);
+  background-color: rgb(10, 10, 10);
+  width: 250px;
+  margin: 10px;
+}
+
+.yt-cell {
+  border: 1px solid white;
+  margin: 0px 10px;
+  background-color: rgb(40, 40, 40);
+}
+
+.video-area {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  //   flex-flow: row wrap;
+  @media (min-width: 1409px) {
+    justify-content: space-evenly;
+  }
+  @media (max-width: 512px) {
+    flex-direction: column;
+  }
+
+  //   margin-left: 10px;
+  //   margin-bottom: 10px;
+}
+
+.vidparts {
+  //   display: none;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  text-align: center;
+  margin: 10px;
+  @media (min-width: 1409px) {
+    flex-grow: 1;
+  }
+
+  h1 {
+    border: 1px solid rgb(10, 10, 10);
+    padding: 5px;
+    background-color: rgb(60, 60, 60);
+    min-width: 310px;
+  }
+}
